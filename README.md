@@ -22,6 +22,7 @@
 - 한글 깨짐 해결 : `res.writeHead(200, { "Content-type": "text/html; charset=utf-8"});`
 
 [05. 로그인 화면 만들기 | 리얼 하드코딩으로](https://www.youtube.com/watch?v=AZtyyeCwNoc)
+- 로그인, 루트 페이지 하드 코딩! 안좋은 코딩의 예시! 좋은 코드로 만들자!
 
 [06. 로그인 뷰(view) 최적화 | MVC의 V(view) 분리하기](https://www.youtube.com/watch?v=dB1n8bKgn1E)
 
