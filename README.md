@@ -8,7 +8,11 @@
 - installing git, nodeJS, vsc 
 
 [03. express로 서버 띄워보기](https://www.youtube.com/watch?v=PkVV1OLaM5Q)
-
+- mkdir login-lecture 
+- 폴더명은 소문자에 띄어쓰기는 하이픈(-)이 관례(컨벤션)
+- express : server framework
+- npm 으로 express 섥치 (express 관련 모든 모듈이 함께 설치됨)
+- root(/)경로 만들기 app.get()
 [04. http로 서버 띄워보기](https://www.youtube.com/watch?v=7gF09WFGK4I)
 
 [05. 로그인 화면 만들기 | 리얼 하드코딩으로](https://www.youtube.com/watch?v=AZtyyeCwNoc)
