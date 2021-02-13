@@ -13,7 +13,13 @@
 - express : server framework
 - npm 으로 express 섥치 (express 관련 모든 모듈이 함께 설치됨)
 - root(/)경로 만들기 app.get()
+
 [04. http로 서버 띄워보기](https://www.youtube.com/watch?v=7gF09WFGK4I)
+- http로 서버 만드는 방법을 알기만 하자!
+- http 내장모듈이다. npm으로 익스프레스처럼 설치다운할 필요가 없다! 
+- req.url 은 주소창의 이름을 파싱해 올수 있다. 
+- http는 익스프레스에 비해 코드가 복잡해진다! 
+- 한글 깨짐 해결 : `res.writeHead(200, { "Content-type": "text/html; charset=utf-8"});`
 
 [05. 로그인 화면 만들기 | 리얼 하드코딩으로](https://www.youtube.com/watch?v=AZtyyeCwNoc)
 
