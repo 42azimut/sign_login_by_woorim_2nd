@@ -59,6 +59,8 @@ router.get("/login", (res, req) => { res.render("home/login");
 - `npm start` 에서 위 스크립트 수행 명령어로 지정되어 있다!
 
 [11. about git](https://www.youtube.com/watch?v=FN9nOLqyNEc)
+- node-modules 깃헙에 절대 업로드 해선 안됨! .gitingnore 사용할것!
+- 반대로 package-lock.json,  package.json 파일은 반드시 깃헙에 올린다! 그래야 npm install 할때 필요한 파일이 설치된다!
 
 [12. 폴더 구조 최적화](https://www.youtube.com/watch?v=BIjDK_xycaI)
 
