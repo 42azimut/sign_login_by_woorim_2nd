@@ -152,8 +152,6 @@ response 는 데이터가 모두 받아진 상태가 아니다.
 - static 을 클래스에 사용! 정적 변수! 
 - 여기서 반드시 중요! 외부에서 클래스에 있는 데이터에 접근하는 것이 불가능 해야 한다. 따라서 static #users = {}  #를 사용하여 은닉화 한다!
 - 은닉화 하면 데이터를 받을수 없기 때문에 받을수 있도록 메서드 생성
-
-[21. User 모델 만들기 | 객체지향 프로그래밍 | 인스턴스화](https://www.youtube.com/watch?v=69JiX9rGNmI)
 ```
 // ...fields  그리고 reduce() 어렵다 !!!!
 
@@ -166,6 +164,15 @@ static getUsers(...fields) {
             return newUsers;
         }, {});
 ```
+
+[21. User 모델 만들기 | 객체지향 프로그래밍 | 인스턴스화](https://www.youtube.com/watch?v=69JiX9rGNmI)
+- const user = new User(req.body);
+- class USer에서 생성자 만듬.
+- login() 함수를 유저 클래스에서 만들고! 
+- 콘트롤 파트에서는 인스턴스화시킨 유저 객체를 로그인 함수와 연결한다! 
+- 설명 힘든것은 여러워서 !!! 다시 반복 공부!! 할 강의 !!!!!!
+- 반복 반복 반복 학습!!!!!
+
 
 [22. 로그인 화면 꾸미기 | 오픈소스 사용해보기 | 코드펜(codepen)](https://www.youtube.com/watch?v=Th-HDyPCewA&t=300s)
 
