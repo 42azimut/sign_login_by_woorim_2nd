@@ -94,7 +94,7 @@ const req = { 객체로 id, psword 를 저장하자! }
 [16. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
 - fetch("경로", {전달할 데이터 객체}) 경로 설정 해야 함
 - 객체 형태로 전달하게됨! 키값에 req 객체를 JSON 형태로 변환! 
-- stringfy 객체 데이터를 문자열로 반환
+- stringify 객체 데이터를 문자열로 반환
 - 서버에 전달할때는 POST 방식으로 method: "POST" 아이디와 패스워드라서! 
 - 서버에 전달하는 데이터는 JSON 이라는 것을 같이 알려줘야 한다! 
     - `header: {'Content-Type': "application/json"}`
@@ -102,6 +102,18 @@ const req = { 객체로 id, psword 를 저장하자! }
 
 
 [17. 로그인 API 만들기 in 서버 | 프런트의 요청데이터 파싱 | body-parser](https://www.youtube.com/watch?v=QLTcXMfcmLE&t=203s)
+- home.ctrl  output and process 로 나눈다! 
+- index.js 에서 get은 ouput, post 는 process 방식으로 네이밍 하면 됨! 
+- app.js 에서 모듈을 설치해야함! body-parser 
+    - `npm i body-parser -s`
+- 그리고 미들웨어로 등록
+```
+app.use(bodyParser.json());
+// URL을 통해 전달되는 데이터에 한글, 공백 등과 같은 문자가 포함될 경우 제대로 인식됨!
+app.use(bodyParser.urlencoded({ extended: true }));
+
+아나~~  app.use("/", home); 위에 바디파서 미들웨어 등록 해야 됨! 하!  순서...
+```
 
 [18. 로그인 인증 기능 만들기 in 서버 | 유저 데이터 만들기](https://www.youtube.com/watch?v=lP1xx1A1vSU&t=8s)
 
