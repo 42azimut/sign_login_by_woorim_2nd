@@ -47,6 +47,9 @@ router.get("/login", (res, req) => { res.render("home/login");
 - index.js 파일에서 home.ctrl 불러오고 ctrl로 객체 생성! 그리고 연결!
 
 [09. app.listen() 모듈화](https://www.youtube.com/watch?v=W5bZy0Uzn6I&t=13s)
+- login-lecture/bin/www.js 생성 
+- app.listen() 분리 한다! 
+- 서버 실행시 바뀐 주소 주위! node ./bin/www.js 
 
 [10. package.json | package-lock.json | node_modules | npm start](https://www.youtube.com/watch?v=Jy9quSZbVTc)
 
