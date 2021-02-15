@@ -146,8 +146,26 @@ response 는 데이터가 모두 받아진 상태가 아니다.
 ```
 
 [20. MVC의 모델(M) 만들기 | 객체지향프로그래밍(OOP) | UserStorage 클래스](https://www.youtube.com/watch?v=x_h2bye9SIE)
+- 데이터를 모델에 따로 저장해 둔다! userstorage.js 클래스로 만든다!
+- 인스턴스화 하여 클래스에 있는 데이터를 접근 가능하게 한다! 
+- 그러나, 인스턴스 하지 않고, 바로 접근 가능하게 하는 방법으로 코딩
+- static 을 클래스에 사용! 정적 변수! 
+- 여기서 반드시 중요! 외부에서 클래스에 있는 데이터에 접근하는 것이 불가능 해야 한다. 따라서 static #users = {}  #를 사용하여 은닉화 한다!
+- 은닉화 하면 데이터를 받을수 없기 때문에 받을수 있도록 메서드 생성
 
 [21. User 모델 만들기 | 객체지향 프로그래밍 | 인스턴스화](https://www.youtube.com/watch?v=69JiX9rGNmI)
+```
+// ...fields  그리고 reduce() 어렵다 !!!!
+
+static getUsers(...fields) {
+        const users = this.#users;
+        const newUsers = fields.reduce((newUsers, field) => {
+            if (users.hasOwnProperty(field)) {
+                newUsers[field] = users[field];
+            }
+            return newUsers;
+        }, {});
+```
 
 [22. 로그인 화면 꾸미기 | 오픈소스 사용해보기 | 코드펜(codepen)](https://www.youtube.com/watch?v=Th-HDyPCewA&t=300s)
 
