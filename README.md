@@ -32,6 +32,9 @@
 - `npm install ejs -s` ejs 모둘을 설치! 
 
 [07. 라우팅 분리](https://www.youtube.com/watch?v=mL84PLyKss0&t=44s)
+- routs/home 안에 app.get()을 분리한다! 
+- 라우터 사용하기 위헤 `const router = express.Router();` 불러온다!
+- use() 미들웨어 등록 메서드! 
 
 [08. MVC의 C(controller) 컨트롤러 분리하기](https://www.youtube.com/watch?v=KwCjYdYv0_s)
 
