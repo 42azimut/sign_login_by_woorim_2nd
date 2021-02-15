@@ -70,7 +70,13 @@ router.get("/login", (res, req) => { res.render("home/login");
 - `app.use(express.static(`${__dirname}/src/public`))
 
 [14. nodemon으로 서버 띄우기 | 개발 생산성 높이기](https://www.youtube.com/watch?v=yJch-m_OCYI&t=11s)
-
+- `npm install nodemon -g` 전역으로 설치
+- `nodemon ./bin/www.js` 서버 자동으로 가동! 
+```
+npm start 명령어로 바꾼다! package.json에서 
+"start": "nodemon ./bin/www.js"  수정!
+변경된 명령어 npm start
+```
 [15. DOM으로 HTML 객체 제어하기 | 프런트 기능 구현](https://www.youtube.com/watch?v=yJch-m_OCYI)
 
 [16. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
