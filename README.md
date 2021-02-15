@@ -78,6 +78,18 @@ npm start 명령어로 바꾼다! package.json에서
 변경된 명령어 npm start
 ```
 [15. DOM으로 HTML 객체 제어하기 | 프런트 기능 구현](https://www.youtube.com/watch?v=yJch-m_OCYI)
+- DOM: Document Objec Model >> 자바스크립트에서 html 존재하는 데이터를 제어 가능!
+- `const id = document.querySelector("선택자")`
+- login.js 실행시키면 id 값이 null이다. 이유는 쿼리셀렉터가 실행되기 전에 console.log(id); 가 먼저 실행 됐기 때문이다. 
+- 따라서 login.ejs <script  defer 포함> defer 와 async 차이 공부할것!
+```
+loginButton.addEventListener("click", login);  //loginButton이 클릭되면, login 함수가 실행된다(콜백함수). 따라서 login 함수를 만들자! 
+console.log(id.value); //id 입력된 값을 가져올수 있다!
+
+const req = { 객체로 id, psword 를 저장하자! }
+중요!!!! 그리고 위 객체형태로 저장된 값을 fetch를 통해서 서버에 전달한다!!!!! 
+- 다음 영상에서..
+```
 
 [16. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
 
