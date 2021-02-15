@@ -92,6 +92,14 @@ const req = { 객체로 id, psword 를 저장하자! }
 ```
 
 [16. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
+- fetch("경로", {전달할 데이터 객체}) 경로 설정 해야 함
+- 객체 형태로 전달하게됨! 키값에 req 객체를 JSON 형태로 변환! 
+- stringfy 객체 데이터를 문자열로 반환
+- 서버에 전달할때는 POST 방식으로 method: "POST" 아이디와 패스워드라서! 
+- 서버에 전달하는 데이터는 JSON 이라는 것을 같이 알려줘야 한다! 
+    - `header: {'Content-Type': "application/json"}`
+- api에는 index.js 에 get 방식 뿐 아니라 POST 방식으로 데이터를 받을수 있는 api 가 있어야 한다. 다음 시간에.
+
 
 [17. 로그인 API 만들기 in 서버 | 프런트의 요청데이터 파싱 | body-parser](https://www.youtube.com/watch?v=QLTcXMfcmLE&t=203s)
 
