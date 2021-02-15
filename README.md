@@ -64,46 +64,51 @@ router.get("/login", (res, req) => { res.render("home/login");
 
 [12. 폴더 구조 최적화](https://www.youtube.com/watch?v=BIjDK_xycaI)
 - app/src 폴더로 구조 최적화!!
-[13. nodemon으로 서버 띄우기 | 개발 생산성 높이기](https://www.youtube.com/watch?v=yJch-m_OCYI&t=11s)
 
-[14. DOM으로 HTML 객체 제어하기 | 프런트 기능 구현](https://www.youtube.com/watch?v=yJch-m_OCYI)
+[13. 프런트를 위한 JS 만들기 | public 폴더 연결](https://www.youtube.com/watch?v=qfCJKf6YAg4&list=PLSK4WsJ8JS4cQ-niGNum4bkK_THHOizTs&index=13)
+- login.js 파일 만들고 app.js에서 미들웨어 등록! public
+- `app.use(express.static(`${__dirname}/src/public`))
 
-[15. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
+[14. nodemon으로 서버 띄우기 | 개발 생산성 높이기](https://www.youtube.com/watch?v=yJch-m_OCYI&t=11s)
 
-[16. 로그인 API 만들기 in 서버 | 프런트의 요청데이터 파싱 | body-parser](https://www.youtube.com/watch?v=QLTcXMfcmLE&t=203s)
+[15. DOM으로 HTML 객체 제어하기 | 프런트 기능 구현](https://www.youtube.com/watch?v=yJch-m_OCYI)
 
-[17. 로그인 인증 기능 만들기 in 서버 | 유저 데이터 만들기](https://www.youtube.com/watch?v=lP1xx1A1vSU&t=8s)
+[16. fetch | 프런트에서 서버로 데이터 보내기](https://www.youtube.com/watch?v=QRo3-00n_ew)
 
-[18. 서버의 응답데이터 처리 in 프런트](https://www.youtube.com/watch?v=x_h2bye9SIE)
+[17. 로그인 API 만들기 in 서버 | 프런트의 요청데이터 파싱 | body-parser](https://www.youtube.com/watch?v=QLTcXMfcmLE&t=203s)
 
-[19. MVC의 모델(M) 만들기 | 객체지향프로그래밍(OOP) | UserStorage 클래스](https://www.youtube.com/watch?v=x_h2bye9SIE)
+[18. 로그인 인증 기능 만들기 in 서버 | 유저 데이터 만들기](https://www.youtube.com/watch?v=lP1xx1A1vSU&t=8s)
 
-[20. User 모델 만들기 | 객체지향 프로그래밍 | 인스턴스화](https://www.youtube.com/watch?v=69JiX9rGNmI)
+[19. 서버의 응답데이터 처리 in 프런트](https://www.youtube.com/watch?v=x_h2bye9SIE)
 
-[21. 로그인 화면 꾸미기 | 오픈소스 사용해보기 | 코드펜(codepen)](https://www.youtube.com/watch?v=Th-HDyPCewA&t=300s)
+[20. MVC의 모델(M) 만들기 | 객체지향프로그래밍(OOP) | UserStorage 클래스](https://www.youtube.com/watch?v=x_h2bye9SIE)
 
-[22. 회원가입 화면 만들기&꾸미기 | 오픈소스 사용해보기](https://www.youtube.com/watch?v=n3XUYss1jPg)
+[21. User 모델 만들기 | 객체지향 프로그래밍 | 인스턴스화](https://www.youtube.com/watch?v=69JiX9rGNmI)
 
-[23. 회원가입 요청 구현 in 프런트 | fetch | ajax](https://www.youtube.com/watch?v=YBRpfDsWm9k&t=307s)
+[22. 로그인 화면 꾸미기 | 오픈소스 사용해보기 | 코드펜(codepen)](https://www.youtube.com/watch?v=Th-HDyPCewA&t=300s)
 
-[24. 회원가입 라우팅&기능구현 in 서버 | 깃 버전 관리 | tag](https://www.youtube.com/watch?v=mizgP540Zvc&t=10s)
+[23. 회원가입 화면 만들기&꾸미기 | 오픈소스 사용해보기](https://www.youtube.com/watch?v=n3XUYss1jPg)
 
-[25. 데이터 파일로 관리하기 | fs(파일시스템) | json](https://www.youtube.com/watch?v=K0vJFEOTMeA&t=318s)
+[24. 회원가입 요청 구현 in 프런트 | fetch | ajax](https://www.youtube.com/watch?v=YBRpfDsWm9k&t=307s)
 
-[26. 파일 DB로 로그인 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=dchFLwlpI-c)
+[25. 회원가입 라우팅&기능구현 in 서버 | 깃 버전 관리 | tag](https://www.youtube.com/watch?v=mizgP540Zvc&t=10s)
 
-[27. 파일 DB로 회원가입 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=myi7ZrKkf2o&t=119s)
+[26. 데이터 파일로 관리하기 | fs(파일시스템) | json](https://www.youtube.com/watch?v=K0vJFEOTMeA&t=318s)
 
-[28. 서버 API 테스트 도구 | Postman | curl](https://www.youtube.com/watch?v=0veQoK9V07k)
+[27. 파일 DB로 로그인 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=dchFLwlpI-c)
 
-[29. ** AWS RDS 대여 | 과금 안되도록 주의하기 | 클라우드 | MySQL](https://www.youtube.com/watch?v=PV4RNoSXQIo)
+[28. 파일 DB로 회원가입 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=myi7ZrKkf2o&t=119s)
 
-[30. ** AWS RDS 한글 설정 | 파라미터 옵션 | 클라우드 | MySQL](https://www.youtube.com/watch?v=kQUmZue6-rA)
+[29. 서버 API 테스트 도구 | Postman | curl](https://www.youtube.com/watch?v=0veQoK9V07k)
 
-[31. ** MySQL workbench | AWS RDS와 연동](https://www.youtube.com/watch?v=C7LK20tlQ6Y)
+[30. ** AWS RDS 대여 | 과금 안되도록 주의하기 | 클라우드 | MySQL](https://www.youtube.com/watch?v=PV4RNoSXQIo)
 
-[32. ** 백엔드 맛보기 | AWS RDS로 DB 구축하기 | 로그인 구현 | MySQL](https://www.youtube.com/watch?v=Q4JpUm-cyQw&t=161s)
+[31. ** AWS RDS 한글 설정 | 파라미터 옵션 | 클라우드 | MySQL](https://www.youtube.com/watch?v=kQUmZue6-rA)
+
+[32. ** MySQL workbench | AWS RDS와 연동](https://www.youtube.com/watch?v=C7LK20tlQ6Y)
+
+[33. ** 백엔드 맛보기 | AWS RDS로 DB 구축하기 | 로그인 구현 | MySQL](https://www.youtube.com/watch?v=Q4JpUm-cyQw&t=161s)
 
 []()
 
-[30. 백엔드 맛보기 | 환경 변수 관리 | 보안 향상 | dotenv](https://www.youtube.com/watch?v=OEZedYK5biA)
+[35. 백엔드 맛보기 | 환경 변수 관리 | 보안 향상 | dotenv](https://www.youtube.com/watch?v=OEZedYK5biA)
