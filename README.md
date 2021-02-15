@@ -116,6 +116,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
 ```
 
 [18. 로그인 인증 기능 만들기 in 서버 | 유저 데이터 만들기](https://www.youtube.com/watch?v=lP1xx1A1vSU&t=8s)
+- 서버에서 인증 하기!
+- 임의의 데이터(아이디, 비번)을 작성해두고! 
+- process 에서 검증 단계를 코딩한다! id가 있으면, 인덱스값 구해서 비번 인덱스 일치 하는지 코딩! 
+- 리턴은 res.json 
+- 그리고 login.js  fetch() 에서 서버로 데이터 보냈다면, 다시 서버에서 응답 받으려면 fecth 끝에 .then() 을 사용한다!
+- `.then((res) => console.log(res.json()));`
+- 그러면 promise로 데이터가 반환된다. 
+```
+res.json() 반환값은 promise 다.
+기본 res 반환값은 response 스트림인데, .json() 메서드를 통해 response(응답) 스트림을 읽을수 있다.
+response 는 데이터가 모두 받아진 상태가 아니다. 
+.json() 으로 response 스트림을 가져와 완료될떄까지 읽는다. 다 읽은 body 텍스트를 promise 형태로 반환한다. 
+```
+- .then(res) => {} 를 통해서 로그인 성공하면 루트 페이지로, 실패하면 경고창 띄우는 코딩 다음 영상에서..
 
 [19. 서버의 응답데이터 처리 in 프런트](https://www.youtube.com/watch?v=x_h2bye9SIE)
 
