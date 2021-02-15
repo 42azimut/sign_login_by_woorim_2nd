@@ -37,6 +37,14 @@
 - use() 미들웨어 등록 메서드! 
 
 [08. MVC의 C(controller) 컨트롤러 분리하기](https://www.youtube.com/watch?v=KwCjYdYv0_s)
+```
+router.get("/login", (res, req) => { res.render("home/login");
+}); 에서 controller 는  
+ 
+실제 컨트롤은  (req, res) => { res.render(....)} 이다! 
+```
+- home.ctrl.js 만들고, 콘트럴러 분리한다! 
+- index.js 파일에서 home.ctrl 불러오고 ctrl로 객체 생성! 그리고 연결!
 
 [09. app.listen() 모듈화](https://www.youtube.com/watch?v=W5bZy0Uzn6I&t=13s)
 
