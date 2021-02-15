@@ -52,6 +52,11 @@ router.get("/login", (res, req) => { res.render("home/login");
 - 서버 실행시 바뀐 주소 주위! node ./bin/www.js 
 
 [10. package.json | package-lock.json | node_modules | npm start](https://www.youtube.com/watch?v=Jy9quSZbVTc)
+- package.json 설치 하려면 
+- `npm init` 설정 초기화
+- `npm init -y` 설정 초기화 && 기본값 자동!! 
+- package.json에서 "scripts": {"명령어 이름": "수행 명령어"}
+- `npm start` 에서 위 스크립트 수행 명령어로 지정되어 있다!
 
 [11. about git](https://www.youtube.com/watch?v=FN9nOLqyNEc)
 
