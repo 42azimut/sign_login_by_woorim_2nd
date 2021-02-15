@@ -2,7 +2,7 @@
 ### 우리밋_woorimIT nodejs 백엔드 튜토리얼
 
 [01. 로그인 & 회원가입 | 오리엔테이션](https://www.youtube.com/watch?v=2jwnbZKc66E&t=262s)
-- 깊게 넓게 <두번쨰 코딩 연습 시작!!!>
+- 깊게 넓게 <두번쨰 코딩 연습 시작!!!
 
 [02. 개발환경 세팅](https://www.youtube.com/watch?v=48lz8rw3PE8)
 - installing git, nodeJS, vsc 
@@ -25,6 +25,11 @@
 - 로그인, 루트 페이지 하드 코딩! 안좋은 코딩의 예시! 좋은 코드로 만들자!
 
 [06. 로그인 뷰(view) 최적화 | MVC의 V(view) 분리하기](https://www.youtube.com/watch?v=dB1n8bKgn1E)
+- index.html 삭제! 필요 없음! view engine을 통해 ejs파일로 만들어 html 대신 보여지게 만듬!
+- html 어떤 엔진으로 해석하는가! >> ejs 로 설정! 
+- `app.set("view engjine, "ejs");`  오타주의: "veiw engine" 
+- `res.render("home/index);` ejs 파일을 렌더한다.
+- `npm install ejs -s` ejs 모둘을 설치! 
 
 [07. 라우팅 분리](https://www.youtube.com/watch?v=mL84PLyKss0&t=44s)
 
