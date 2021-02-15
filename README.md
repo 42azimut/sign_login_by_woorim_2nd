@@ -132,6 +132,18 @@ response 는 데이터가 모두 받아진 상태가 아니다.
 - .then(res) => {} 를 통해서 로그인 성공하면 루트 페이지로, 실패하면 경고창 띄우는 코딩 다음 영상에서..
 
 [19. 서버의 응답데이터 처리 in 프런트](https://www.youtube.com/watch?v=x_h2bye9SIE)
+```
+.then((res) => {
+            if (res.success) {
+                location.href = "/";
+            } else {
+                alert(res.msg);  //실패하면 ctrl에 msg 실행!
+            }
+        })
+        .catch((err) => {
+            console.error(new Error("로그인 중 에러 발생"));
+        });
+```
 
 [20. MVC의 모델(M) 만들기 | 객체지향프로그래밍(OOP) | UserStorage 클래스](https://www.youtube.com/watch?v=x_h2bye9SIE)
 
