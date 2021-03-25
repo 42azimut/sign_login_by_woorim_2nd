@@ -175,6 +175,7 @@ static getUsers(...fields) {
 
 
 [22. 로그인 화면 꾸미기 | 오픈소스 사용해보기 | 코드펜(codepen)](https://www.youtube.com/watch?v=Th-HDyPCewA&t=300s)
+- codepen 코드 사용!
 
 [23. 회원가입 화면 만들기&꾸미기 | 오픈소스 사용해보기](https://www.youtube.com/watch?v=n3XUYss1jPg)
 
