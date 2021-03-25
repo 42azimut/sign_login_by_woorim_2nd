@@ -194,6 +194,8 @@ static getUsers(...fields) {
 - fs
 - databases/users.json 
 [27. 파일 DB로 로그인 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=dchFLwlpI-c)
+- 유저인포 은닉!
+- 프로미스, 어싱크, 어웨잇
 
 [28. 파일 DB로 회원가입 구현 | promise와 async await 으로 비동기 최적화](https://www.youtube.com/watch?v=myi7ZrKkf2o&t=119s)
 
