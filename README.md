@@ -178,10 +178,17 @@ static getUsers(...fields) {
 - codepen 코드 사용!
 
 [23. 회원가입 화면 만들기&꾸미기 | 오픈소스 사용해보기](https://www.youtube.com/watch?v=n3XUYss1jPg)
+- 회원가입 화면 만들기
 
 [24. 회원가입 요청 구현 in 프런트 | fetch | ajax](https://www.youtube.com/watch?v=YBRpfDsWm9k&t=307s)
 
 [25. 회원가입 라우팅&기능구현 in 서버 | 깃 버전 관리 | tag](https://www.youtube.com/watch?v=mizgP540Zvc&t=10s)
+- 회원가입 유저 정보 저장 함수 만들기 (파일 저장 아님!!!) 
+- 파일 저장은 26강의!
+- git log --oneline  : 로그 한줄보기
+- `git tag v0.1.0-memo`  : tag 버전
+- 깃 허브 태그 삭제 : `git push origin :v0.1.0-memo` : 반드시 써야 함
+- 깃 로컬 태그 삭제 : `git tag -d v1.0.1-memo`
 
 [26. 데이터 파일로 관리하기 | fs(파일시스템) | json](https://www.youtube.com/watch?v=K0vJFEOTMeA&t=318s)
 
