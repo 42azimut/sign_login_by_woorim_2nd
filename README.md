@@ -265,6 +265,24 @@ SELECT  *FROM users;
 
 [33. ** 백엔드 맛보기 | AWS RDS로 DB 구축하기 | 로그인 구현 | MySQL](https://www.youtube.com/watch?v=Q4JpUm-cyQw&t=161s)
 - USERSTORAGE.JS 갈아 엎음!
-[34. AWS RDS로 회원가입 구현 | 웹서버와 WAS | MYSQL]()
+
+[34. AWS RDS로 회원가입 구현 | 웹서버와 WAS | MYSQL](https://www.youtube.com/watch?v=ykhTdWVkuC8&list=PLSK4WsJ8JS4cQ-niGNum4bkK_THHOizTs&index=34)
+- web server : was(web application server)
+- 둘다 사용하면 구분! 
+- 웹서버: 클라이언트에서 요청이 오면 서버에서 정적 데이터만 전달 한다. 데이터, 이미지 등. 단순 전달!
+- was : 요청이 오면 데이터를 가공하여 로직으로 처리하고, 그에 대한 응답으로 전달! 즉, 데이터 로직 가공! 
 
 [35. 백엔드 맛보기 | 환경 변수 관리 | 보안 향상 | dotenv](https://www.youtube.com/watch?v=OEZedYK5biA)
+- 환경변수란 : os 전반에 걸쳐 변수를 등록한다! 
+- 설치 : `npm i -s dotenv` 
+- app폴더에 .env 파일 생성
+- .env에 `PORT=3000`
+- 파일내에 `const PORT = process.env.PORT || 3000;`
+```
+const db = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PSWORD,
+    database: process.env.DB_DATABASE,
+});
+```
