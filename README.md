@@ -236,6 +236,32 @@ MySQL [(none)]> show databases;
 ```
 
 [32. ** MySQL workbench | AWS RDS와 연동](https://www.youtube.com/watch?v=C7LK20tlQ6Y)
+- mysql workbench  + 버튼 클릭
+- db login_leture 사용 : `use login_lecture;`
+
+```
+use login_lecture;
+
+CREATE TABLE users(
+	id varchar(30) NOT NULL,
+    name varchar(30) NOT NULL,
+    psword varchar(30) NOT NULL,
+    in_date datetime DEFAULT current_timestamp,
+    
+    PRIMARY KEY(id)
+);
+
+show tables;
+desc users;
+
+INSERT INTO users(id, name, psword)
+	values("jay", "NaDaeJs", "1234"),
+    ("trumph", "GaeNari", "1234"),
+    ("blackpink", "DustDawn", "1234"),
+    ("우리", "gaja", "1234");
+
+SELECT  *FROM users;
+```
 
 [33. ** 백엔드 맛보기 | AWS RDS로 DB 구축하기 | 로그인 구현 | MySQL](https://www.youtube.com/watch?v=Q4JpUm-cyQw&t=161s)
 
