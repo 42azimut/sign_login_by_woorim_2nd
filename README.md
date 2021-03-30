@@ -264,7 +264,7 @@ SELECT  *FROM users;
 ```
 
 [33. ** 백엔드 맛보기 | AWS RDS로 DB 구축하기 | 로그인 구현 | MySQL](https://www.youtube.com/watch?v=Q4JpUm-cyQw&t=161s)
-
-[]()
+- USERSTORAGE.JS 갈아 엎음!
+[34. AWS RDS로 회원가입 구현 | 웹서버와 WAS | MYSQL]()
 
 [35. 백엔드 맛보기 | 환경 변수 관리 | 보안 향상 | dotenv](https://www.youtube.com/watch?v=OEZedYK5biA)
