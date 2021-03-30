@@ -202,8 +202,38 @@ static getUsers(...fields) {
 [29. 서버 API 테스트 도구 | Postman | curl](https://www.youtube.com/watch?v=0veQoK9V07k)
 
 [30. ** AWS RDS 대여 | 과금 안되도록 주의하기 | 클라우드 | MySQL](https://www.youtube.com/watch?v=PV4RNoSXQIo)
+- aws rds 구현하기
+- 표준생성, Mysql, 프리티어, 디비 인스턴스 식별자(고유네임):login-lecture-azimut
+- aws db 접속 아이디: admin  / pw: ****!07.....
+- db 인스턴스 크기 : 기본
+- 스토리지 : 그대로.. 스토리지 자동 조정 활성화(비활성)
+- VPC : 디폴트
+- 서브넷: 데폴트
+- 퍼블릭 엑세스 : 외부에서 접속 설정 가능 여부(예)
+- 추가 연결구성 : 디비 포트(3306) mysql 기본포트 
+- 추가 구성  (- 안됨)
+    - 초기 디비 이름: login_lecture
+    - 디비 생성! - 생성중 기둘려!! 5분 정도 ..
+- 엔드포인트 : 내가 접속할 도메인이라 보면됨! 보안유지!
+- 포트 : 3306
 
+- 보안그룹 해야함!
 [31. ** AWS RDS 한글 설정 | 파라미터 옵션 | 클라우드 | MySQL](https://www.youtube.com/watch?v=kQUmZue6-rA)
+- 파라미터 그룹 :  setting
+- `mysql -h login-lecture-********************.ap-northeast-2.rds.amazonaws.com -u admin -p`
+- `show databases;`
+```
+MySQL [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| login_lecture      |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+```
 
 [32. ** MySQL workbench | AWS RDS와 연동](https://www.youtube.com/watch?v=C7LK20tlQ6Y)
 
